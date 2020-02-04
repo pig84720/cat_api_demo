@@ -1,11 +1,19 @@
 {
   "name": "catty_api",
   "version": "1.0.0",
-  "description": "",
+  "description": "catty",
   "main": "script.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pig84720/cat_api_demo.git"
+  },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "save": "^2.4.0",
+    "sweetalert2": "^9.7.1"
+  }
 }

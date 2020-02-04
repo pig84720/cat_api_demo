@@ -1,9 +1,7 @@
-document.write("<script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/8.11.8/sweetalert2.all.min.js'></script>");
 var stop = document.querySelector("#stop");
 var play = document.querySelector("#play");
 
 stop.onclick = function() {
-    swal("已寄出新密碼", "請至您的信箱查收新的登入密碼", "success");
     clearInterval(cat1);
     cat1 = null;
     clearInterval(cat2);
