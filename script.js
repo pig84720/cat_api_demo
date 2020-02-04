@@ -31,7 +31,7 @@ play.onclick = function() {
     }
 }
 
-var get_some_cat1 = function() {
+var get_some_cat = function(class_name) {
     var data = null;
     var xhr = new XMLHttpRequest();
     xhr.withCredentials = false;
@@ -40,7 +40,7 @@ var get_some_cat1 = function() {
     xhr.onload = () => {
         let data = JSON.parse(xhr.responseText);
         if(data[0].length !== 0) {
-            document.querySelector('.img1').src = data[0].url;
+            document.querySelector(class_name).src = data[0].url;
         } else {
             alert("api發生錯誤")
         }
@@ -48,71 +48,21 @@ var get_some_cat1 = function() {
     xhr.send(data);
 }
 var cat1 = setInterval(function(){
-    get_some_cat1();
+    get_some_cat(".img1");
     }, 5000);
 cat1;
 
-var get_some_cat2 = function() {
-    var data = null;
-    var xhr = new XMLHttpRequest();
-    xhr.withCredentials = false;
-    xhr.open("GET", "https://api.thecatapi.com/v1/images/search");
-    xhr.setRequestHeader("x-api-key", "7a6fa237-814b-44bb-88a2-fa95812cc603");
-    xhr.onload = () => {
-        let data = JSON.parse(xhr.responseText);
-        if(data[0].length !== 0) {
-            document.querySelector('.img2').src = data[0].url;
-        } else {
-            alert("api發生錯誤")
-        }
-    }
-    xhr.send(data);
-}
 var cat2 = setInterval(function(){
-    get_some_cat2();
+    get_some_cat(".img2");
     }, 5000);
 setTimeout(cat2,3000);
 
-var get_some_cat3 = function() {
-    var data = null;
-    var xhr = new XMLHttpRequest();
-    xhr.withCredentials = false;
-    xhr.open("GET", "https://api.thecatapi.com/v1/images/search");
-    xhr.setRequestHeader("x-api-key", "7a6fa237-814b-44bb-88a2-fa95812cc603");
-    xhr.onload = () => {
-        let data = JSON.parse(xhr.responseText);
-        if(data[0].length !== 0) {
-            document.querySelector('.img3').src = data[0].url;
-        } else {
-            alert("api發生錯誤")
-        }
-    }
-    xhr.send(data);
-}
 var cat3 = setInterval(function(){
-    get_some_cat3();
+    get_some_cat(".img3");
     }, 5000);
 setTimeout(cat3,6000);
 
-
-var get_some_cat4 = function() {
-    var data = null;
-    var xhr = new XMLHttpRequest();
-    xhr.withCredentials = false;
-    xhr.open("GET", "https://api.thecatapi.com/v1/images/search");
-    xhr.setRequestHeader("x-api-key", "7a6fa237-814b-44bb-88a2-fa95812cc603");
-    xhr.onload = () => {
-        let data = JSON.parse(xhr.responseText);
-        if(data[0].length !== 0) {
-            document.querySelector('.img4').src = data[0].url;
-        } else {
-            alert("api發生錯誤")
-        }
-    }
-    xhr.send(data);
-}
 var cat4 = setInterval(function(){
-    get_some_cat4();
+    get_some_cat(".img4");
     }, 5000);
 setTimeout(cat4,9000);
-
