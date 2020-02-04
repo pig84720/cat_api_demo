@@ -17,16 +17,16 @@ play.onclick = function() {
         return;
     } else {
         cat1 = setInterval(function(){
-            get_some_cat1();
+            get_some_cat(".img1");
             }, 5000);
         cat2 = setInterval(function(){
-            get_some_cat2();
+            get_some_cat(".img2");
             }, 5000);
         cat3 = setInterval(function(){
-            get_some_cat3();
+            get_some_cat(".img3");
             }, 5000);
         cat4 = setInterval(function(){
-            get_some_cat4();
+            get_some_cat(".img4");
             }, 5000);
     }
 }
