@@ -1,21 +1,19 @@
 var stop = document.querySelector("#stop");
 var play = document.querySelector("#play");
 
-stop.onclick = function() {
-    clearInterval(cat1);
-    cat1 = null;
-    clearInterval(cat2);
-    cat2 = null;
-    clearInterval(cat3);
-    cat3 = null;
-    clearInterval(cat4);
-    cat4 = null;
-}
-
 play.onclick = function() {
     if(cat1) {
-        return;
+        play.src = "https://image.flaticon.com/icons/svg/2468/2468825.svg"
+        clearInterval(cat1);
+        cat1 = null;
+        clearInterval(cat2);
+        cat2 = null;
+        clearInterval(cat3);
+        cat3 = null;
+        clearInterval(cat4);
+        cat4 = null;
     } else {
+        play.src = "https://image.flaticon.com/icons/svg/715/715343.svg"
         cat1 = setInterval(function(){
             get_some_cat(".img1");
             }, 5000);

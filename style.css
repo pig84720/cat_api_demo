@@ -61,10 +61,6 @@ img {
     opacity: .5
 }
 
-#stop {
-    left: 38%;
-}
-
 #play {
-    right: 38%;
+    margin: auto;
 }
