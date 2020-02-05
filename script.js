@@ -1,5 +1,4 @@
 document.write('<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>');
-var stop = document.querySelector("#stop");
 var play = document.querySelector("#play");
 
 play.onclick = function() {
