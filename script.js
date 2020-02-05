@@ -1,8 +1,10 @@
+document.write('<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>');
 var stop = document.querySelector("#stop");
 var play = document.querySelector("#play");
 
 play.onclick = function() {
     if(cat1) {
+        swal("現在...", "可以下載喜歡的貓貓圖囉", "success");
         play.src = "https://image.flaticon.com/icons/svg/2468/2468825.svg"
         clearInterval(cat1);
         cat1 = null;
