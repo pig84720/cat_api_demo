@@ -4,7 +4,7 @@ var play = document.querySelector("#play");
 
 play.onclick = function() {
     if(cat1) {
-        swal("現在...", "可以下載喜歡的貓貓圖囉", "success");
+        swal("可以下載喜歡的貓貓圖囉", "滑鼠移至貓貓圖=>右鍵=>另存圖檔", "success");
         play.src = "https://image.flaticon.com/icons/svg/2468/2468825.svg"
         clearInterval(cat1);
         cat1 = null;
