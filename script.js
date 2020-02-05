@@ -15,7 +15,7 @@ play.onclick = function() {
         clearInterval(cat4);
         cat4 = null;
     } else {
-        play.src = "https://image.flaticon.com/icons/svg/715/715343.svg"
+        play.src = "https://image.flaticon.com/icons/svg/2468/2468816.svg"
         cat1 = setInterval(function(){
             get_some_cat(".img1");
             }, 5000);
